@@ -1,7 +1,7 @@
 {
     "editor.fontLigatures": true,
-    "editor.fontFamily": "Cascadia Code PL",
-    "terminal.integrated.fontFamily": "Delugia",
+    "editor.fontFamily": "Cascadia Code NF SemiLight",
+    "terminal.integrated.fontFamily": "Cascadia Code NF",
     "editor.cursorStyle": "block",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.editor.highlightModifiedTabs": true,
@@ -17,14 +17,17 @@
     "breadcrumbs.enabled": true,
     "extensions.autoUpdate": true,
     "extensions.ignoreRecommendations": false,
+    "git.ignoreMissingGitWarning": true,
+    "git.autofetch": true,
     "vsicons.dontShowNewVersionMessage": true,
     "security.workspace.trust.untrustedFiles": "open",
     "security.workspace.trust.banner": "never",
     "telemetry.telemetryLevel": "off",
     "editor.accessibilitySupport": "off",
+    "powershell.integratedConsole.showOnStartup": false,
     "terminal.integrated.persistentSessionReviveProcess": "never",
     "workbench.colorCustomizations": {
-        "[Theme Mix]": {
+        "[*]": {
             "bookmarks.lineBackground": "#3d444d",
             "bookmarks.lineBorder": "#ec775c",
             "activityBar.activeBorder": "#ec775c",
@@ -114,6 +117,13 @@
             "errorForeground": "#e5534b",
             "focusBorder": "#316dca",
             "foreground": "#adbac7",
+            "gitDecoration.addedResourceForeground": "#57ab5a",
+            "gitDecoration.conflictingResourceForeground": "#cc6b2c",
+            "gitDecoration.deletedResourceForeground": "#e5534b",
+            "gitDecoration.ignoredResourceForeground": "#636e7b",
+            "gitDecoration.modifiedResourceForeground": "#c69026",
+            "gitDecoration.submoduleResourceForeground": "#768390",
+            "gitDecoration.untrackedResourceForeground": "#57ab5a",
             "icon.foreground": "#768390",
             "input.background": "#22272e",
             "input.border": "#444c56",
@@ -257,16 +267,29 @@
             "tree.indentGuidesStroke": "#373e47",
         }
     },
+    "powershell.promptToUpdatePowerShell": false,
     "terminal.integrated.tabs.enabled": false,
+    "todohighlight.isEnable": true,
+    "todohighlight.include": [
+        "**/*.ps1",
+        "**/*.js",
+        "**/*.jsx",
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.html",
+        "**/*.php",
+        "**/*.css",
+        "**/*.scss"
+    ],
+    "codesnap.showWindowControls": false,
+    "codesnap.shutterAction": "copy",
+    "codesnap.backgroundColor": "#ffffff",
+    "codesnap.transparentBackground": true,
+    "codesnap.boxShadow": "rgba(0, 0, 0, 0.55) 0px 10px 10px",
     "workbench.colorTheme": "Theme Mix",
-    "terminal.integrated.profiles.windows": {
-        "PowerShell": {
-            "path": "pwsh.exe",
-            "args": [
-                "-noexit"
-            ]
-        }
-    },
-    "terminal.integrated.defaultProfile.windows": "PowerShell",
-    "git.autofetch": true
+    "editor.stickyScroll.enabled": true,
+    "terminal.integrated.stickyScroll.enabled": true,
+    "workbench.tree.enableStickyScroll": true,
+    "gitlens.ai.experimental.provider": "openai",
+    "gitlens.ai.experimental.openai.model": "gpt-4-1106-preview"
 }
